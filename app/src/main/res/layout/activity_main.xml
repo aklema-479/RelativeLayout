@@ -17,4 +17,14 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/welcome_back"
+        android:textSize="30sp"
+        android:fontFamily="serif-monospace"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+
 </RelativeLayout>
