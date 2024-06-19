@@ -53,41 +53,92 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView1"
-            android:layout_width="250dp"
+            android:layout_width="270dp"
             android:layout_height="150dp"
             app:cardBackgroundColor="#ff0000"
             app:cardCornerRadius="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Balance"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:id="@+id/balanceId"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$15,000.00"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:id="@+id/amount"
+                    android:fontFamily="serif-monospace"
+                    android:layout_below="@+id/balanceId"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="152***********598"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/amount"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"/>
+
+
+            </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView2"
-            android:layout_width="70dp"
+            android:layout_width="60dp"
             android:layout_height="150dp"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="30dp"
             app:cardBackgroundColor="#B0CDEB"
             app:cardCornerRadius="20dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="10sp"
-                android:layout_marginTop="50dp"
-                android:rotation="270"
-                android:textColor="#25A3D9"
-                android:text="@string/add_card_wallet" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/iconn"
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_gravity="center"
+               android:gravity="center"
+               >
+               <TextView
+                   android:layout_width="150dp"
+                   android:layout_height="120dp"
+                   android:textSize="13sp"
+                   android:rotation="270"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:textColor="#25A3D9"
+                   android:textStyle="bold"
+                   android:fontFamily="serif"
+                   android:drawableStart="@drawable/iconn"
+                   android:text="@string/add_card_wallet" />
 
-                />
+
+           </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
