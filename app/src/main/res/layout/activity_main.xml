@@ -18,6 +18,7 @@
           android:layout_height="wrap_content"
           android:text="@string/welcome_back"
           android:textSize="25sp"
+          android:textColor="@color/black"
           android:fontFamily="serif-monospace"
           android:layout_marginStart="20dp"
           android:layout_marginTop="20dp"/>
@@ -29,6 +30,7 @@
           android:layout_below="@+id/welcome"
           android:textSize="30sp"
           android:textStyle="bold"
+          android:textColor="@color/black"
           android:fontFamily="serif-monospace"
           android:layout_marginStart="20dp"
           />
@@ -75,17 +77,299 @@
                 android:rotation="270"
                 android:textColor="#25A3D9"
                 android:text="@string/add_card_wallet" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iconn"
+
+                />
 
         </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/iconn"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/layout2"
+        android:gravity="center"
+        android:id="@+id/layout3">
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/card1"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/b1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qr"/>
 
-        />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/card1"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/b1"
+            android:id="@+id/b2">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/request"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/card1"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/b2"
+            android:id="@+id/b3">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/topup"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/card1"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/b3"
+            android:id="@+id/b4">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/transfer"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/layout3"
+    android:id="@+id/text3"
+    android:text="@string/choose_your_discount"
+    android:layout_marginStart="25dp"
+    android:layout_marginTop="15dp"
+    android:textColor="@color/black"
+    android:textSize="23sp"
+    android:fontFamily="serif"
+    android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/layout4"
+        android:layout_width="wrap_content"
+        android:layout_height="91dp"
+        android:layout_below="@+id/text3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/card2">
+
+        <ImageView
+            android:id="@+id/chickenId"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/chicken" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/chickenId"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/chickenId">
+
+            <TextView
+                android:id="@+id/chickenText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="@string/fried_chicken"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chickenText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chickenText1"
+                android:fontFamily="serif"
+                android:text="@string/food_and_beverage"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/chickenId"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="serif"
+            android:text="@string/_20"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout5"
+        android:layout_width="wrap_content"
+        android:layout_height="91dp"
+        android:layout_below="@+id/layout4"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/card2">
+
+        <ImageView
+            android:id="@+id/sweaterId"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/sweater" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/sweaterId"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/sweaterId">
+
+            <TextView
+                android:id="@+id/s1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="@string/sweater"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/s2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s1"
+                android:fontFamily="serif"
+                android:text="@string/fashion_and_clothing"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sweaterId"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="serif"
+            android:text="@string/_15"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout6"
+        android:layout_width="wrap_content"
+        android:layout_height="91dp"
+        android:layout_below="@+id/layout5"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/card2">
+
+        <ImageView
+            android:id="@+id/fId"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/sofa" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/fId"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/fId">
+
+            <TextView
+                android:id="@+id/f1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="@string/sofa"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/f2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f1"
+                android:fontFamily="serif"
+                android:text="@string/furniture_and_fixtures"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/fId"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="serif"
+            android:text="@string/_10"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+
 
 
 

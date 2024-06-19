@@ -3,4 +3,14 @@
     <string name="welcome_back">Welcome Back!</string>
     <string name="manara_hayat">Manara Hayat</string>
     <string name="add_card_wallet">Add card wallet</string>
+    <string name="choose_your_discount">Choose your discount</string>
+    <string name="food_and_beverage">Food &amp; Beverage</string>
+    <string name="fried_chicken">Fried-Chicken</string>
+    <string name="_20">20%</string>
+    <string name="_15">15%</string>
+    <string name="sweater">Sweater</string>
+    <string name="fashion_and_clothing">Fashion &amp; Clothing</string>
+    <string name="_10">10%</string>
+    <string name="sofa">Sofa</string>
+    <string name="furniture_and_fixtures">Furniture &amp; Fixtures</string>
 </resources>
